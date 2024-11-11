@@ -1,75 +1,49 @@
 def int_division():
-    """
-    Task:
-    - Perform integer division of 7 by 2.
-    
-    Return:
-    - The result of the division (integer).
-    """
-    pass
+    result = 7 / 2
+    return int(result)
 
 
 def float_multiplication():
-    """
-    Task:
-    - Multiply 3.0 by 2.
-    
-    Return:
-    - The result of the multiplication (float).
-    """
-    pass
+    result = 3.0 * 2
+    return result
 
 
 def combine_operations():
-    """
-    Task:
-    - Add the result of integer division and multiplication.
-    
-    Return:
-    - The combined result (float).
-    """
-    pass
+    result = float_multiplication()
+    return result
 
+print(f"comb: {combine_operations()}")
 
 def extract_word():
-    """
-    Task:
-    - Extract the word 'awesome' from the string 'Python is awesome!'.
-    
-    Return:
-    - The extracted word ('awesome').
-    """
-    pass
+    sentence = 'Python is awesome!'
+    the_list = sentence.split(" ")
+    the_word = ""
+
+    for i in range(len(the_list)):
+        if the_list[i] == "awesome!":
+            for j in range(0, len(the_list[i]) - 1):
+                the_word += the_list[i][j]
+
+    return the_word
 
 
 def to_lowercase():
-    """
-    Task:
-    - Convert the string 'Python is awesome!' to lowercase.
-    
-    Return:
-    - The lowercase version of the string.
-    """
-    pass
+    sentence = 'Python is awesome!'
+    return sentence.lower()
 
 
 def count_o():
-    """
-    Task:
-    - Count how many times the letter 'o' appears in the string 'Python is awesome!'.
-    
-    Return:
-    - The count of the letter 'o'.
-    """
-    pass
+    count = 0
+    sentence = 'Python is awesome!'
+    for word in sentence:
+        if word == "o":
+            count += 1
+
+    return count
 
 
 def evaluate_boolean():
-    """
-    Task:
-    - Evaluate the expression 'not (5 > 3) and (10 == 5 * 2)'.
-    
-    Return:
-    - The boolean result of the expression.
-    """
-    pass
+    if (5 > 3) and (10 == 5 * 2):
+        return False
+    else:
+        return True
