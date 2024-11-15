@@ -34,43 +34,18 @@ def check_if_value_exists(t, value):
 
 
 def find_intersection(set1, set2):
-    """
-    Task:
-    - Find the intersection of sets `set1` and `set2`.
-    
-    Return:
-    - The intersection of the two sets.
-    """
-    return 
-
-# print(find_intersection({1, 2, 3, 4}, {3, 4, 5, 6}))
+    the_intersection = set1.intersection(set2)
+    return the_intersection
 
 
 def find_union(set1, set2):
-    """
-    Task:
-    - Find the union of sets `set1` and `set2`.
-    
-    Return:
-    - The union of the two sets.
-    """
-    new_set = {}
-    for i in range(len(set1)):
-        print(set1[i])
-        print(set2[i])
-
-    # return new_set
+    the_union = set1.union(set2)
+    return the_union
 
 
 def find_difference(set1, set2):
-    """
-    Task:
-    - Find the difference between set1 and set2 (i.e., set1 - set2).
-    
-    Return:
-    - The difference between the two sets.
-    """
-    pass
+    the_difference = set1.difference(set2)
+    return the_difference
 
 
 def add_student(student_grades):

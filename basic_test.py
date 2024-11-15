@@ -35,8 +35,8 @@ def to_lowercase():
 def count_o():
     count = 0
     sentence = 'Python is awesome!'
-    for word in sentence:
-        if word == "o":
+    for letter in sentence:
+        if letter == "o":
             count += 1
 
     return count
